@@ -84,6 +84,41 @@ header {
   outline: none;
 }
 
+/* ================= SEARCH HOVER EFFECT ================= */
+
+.search_bar {
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.search_bar:hover {
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 63, 108, 0.4);
+}
+
+/* ================= PROFILE & WISHLIST HOVER ================= */
+
+.action_container:hover .action_name {
+  color: #ff3f6c;
+}
+
+.action_container:hover .material-symbols-outlined {
+  color: #ff3f6c;
+}
+
+/* Smooth dropdown animation */
+.dropdown {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.action_container:hover .dropdown {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 /* ================= ACTION BAR ================= */
 
 .action_bar {
@@ -248,3 +283,4 @@ footer {
   font-size: 13px;
   color: #94969f;
 }
+
